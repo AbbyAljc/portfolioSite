@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -7,19 +8,11 @@ import { Component, HostListener, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit{
   title = 'my-portfolio';
-   /* scrolled = 1;
 
-    @HostListener('window:scroll', ['$event'])
-    onWindowScroll($event) {
-      const numb = window.scrollY;
-      if (numb >= 50){
-        this.scrolled = 0;
-      }
-      else {
-        this.scrolled = 1;
-      }
-    }*/
      ngOnInit(): void {
+
+      AOS.init();
+
       var TxtRotate = function(el, toRotate, period) {
           this.toRotate = toRotate;
           this.el = el;

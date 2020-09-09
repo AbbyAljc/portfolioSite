@@ -1,12 +1,12 @@
 :host {
     width: 40%;
     margin: 20px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 2%;
+    margin-bottom: 2%;
     background-color: none;
     display: flex;
     flex-direction: column;
-    transition-duration: 0.2s;
+    transition-duration: 0s;
     cursor: pointer;
     font-family: 'Roboto Mono', monospace;
 }
@@ -28,46 +28,22 @@ img {
  }
 
 
-:host:hover .title {opacity:1;}
+:host:hover div .title {opacity:1;}
 
 
-.popup {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  user-select: none;
+p {
+  display:none;
 }
 
-/* The actual popup */
-.popup .popuptext {
-  visibility: hidden;
-  width: 160px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
+button{
+  background: none;
+  border: none;
+  display: none;
   position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
+  right:0;
+  top:0;
 }
 
-/* Popup arrow */
-.popup .popuptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
+.container{
 
-/* Toggle this class - hide and show the popup */
-.popup .show {
-  visibility: visible;
 }
-

@@ -8,6 +8,8 @@ import { ParallaxDirective } from './parallax.directive';
 import { ProjectComponent } from './project/project.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
